@@ -1,7 +1,8 @@
-// @deno-types="npm:@types/express"
-import express from "npm:express";
-import { ApolloServer, gql } from "npm:apollo-server-express";
-import { buildSubgraphSchema } from "npm:@apollo/subgraph";
+// @deno-types="npm:@types/express@4"
+import express from "npm:express@4.18.2";
+import { x } from "npm:graphql@16.6.0"; // currently graphql is not automatically imported but necessary to run
+import { ApolloServer, gql } from "npm:apollo-server-express@3.10.3";
+import { buildSubgraphSchema } from "npm:@apollo/subgraph@2.1.4";
 
 const port = 8765;
 const app = express();
